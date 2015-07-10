@@ -14,13 +14,13 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
 RUN apt-get update
 
 #Install JDK 8
-RUN apt-get install oracle-java8-installer
+RUN apt-get install oracle-java8-installer -y
 
 #Install Git
-RUN apt-get install git
+RUN apt-get install git -y 
 
 #Install maven
-RUN apt-get install maven
+RUN apt-get install maven -y
 
 #Get the source repository
 RUN git clone https://github.com/GruppoPBDMNG-7/shortify.me
