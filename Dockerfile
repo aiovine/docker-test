@@ -27,7 +27,8 @@ RUN apt-get install maven -y
 RUN git clone https://github.com/GruppoPBDMNG-7/shortify.me
 
 #compile the source and generate the jar file
-RUN cd shortify.me; RUN mvn package
+WORKDIR "/shortify.me"
+RUN mvn package
 
 #execute the jar
 RUN java -cp target/URLShortener-0.0.1-SNAPSHOT.jar me.shortify.sparkserver.App
