@@ -33,5 +33,3 @@ RUN mv /shortify.me/ClientAngular /
 WORKDIR "/shortify.me/ServerJava"
 RUN mvn package
 
-CMD java -jar target/shortify.me.jar
-
