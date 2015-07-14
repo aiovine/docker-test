@@ -27,7 +27,8 @@ RUN apt-get install maven -y
 RUN git clone https://github.com/GruppoPBDMNG-7/shortify.me
 
 #move the client files to the root
-#RUN mv /shortify.me/ClientAngular/* /*
+WORKDIR "/shortify.me/ClientAngular"
+RUN cp -r * /
 
 #compile the source and generate the jar file
 WORKDIR "/shortify.me/ServerJava"
