@@ -2,7 +2,7 @@
 Per chi utilizza boot2docker:
  - Aprire VirtualBox
  - Entrare nelle impostazioni di rete della virtual machine
- - Inoltrare le porte TCP 4567 (sia Host che Guest) sull'indirizzo 127.0.0.1
+ - Inoltrare le porte TCP 4567 e 9042 (sia Host che Guest) sull'indirizzo 127.0.0.1
  - Avviare boot2docker
 
 Clonare questo repository:
