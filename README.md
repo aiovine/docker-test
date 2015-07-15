@@ -17,6 +17,9 @@ docker build --tag=gruppoPBDMNG-7/shortify.me ./
 Una volta creata l'immagine, creare il container: 
 docker run -d -p 4567:4567 -p 9042:9042 gruppoPBDMNG-7/shortify.me
 
+Ottenere l'id del container appena creato:
+docker ps
+
 Entrare nel container:
 docker exec -it \<id del container\> bash
 
