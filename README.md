@@ -9,16 +9,16 @@ Clonare questo repository:
 git clone https://github.com/aiovine/docker-test.git
 
 Entrare nella cartella:
-cd docker-test
+<pre>cd docker-test</pre>
 
 Fare il build dell'immagine:
-docker build --tag=gruppo_pbdmng_7/shortify.me ./
+<pre>docker build --tag=gruppo_pbdmng_7/shortify.me ./</pre>
 
 Una volta creata l'immagine, creare il container: 
-docker run -d --name shortify.me -p 4567:4567 -p 9042:9042 gruppo_pbdmng_7/shortify.me
+<pre>docker run -d --name shortify.me -p 4567:4567 -p 9042:9042 gruppo_pbdmng_7/shortify.me</pre>
 
 Entrare nel container:
-docker exec -it shortify.me bash
+<pre>docker exec -it shortify.me bash</pre>
 
 Da shell lanciare il comando:
-java -jar target/shortify.me.jar
+<pre>java -jar target/shortify.me.jar</pre>
