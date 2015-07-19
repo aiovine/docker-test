@@ -6,7 +6,7 @@ Per chi utilizza boot2docker:
  - Avviare boot2docker
 
 Clonare questo repository:
-git clone https://github.com/aiovine/docker-test.git
+<pre>git clone https://github.com/aiovine/docker-test.git</pre>
 
 Entrare nella cartella:
 <pre>cd docker-test</pre>
