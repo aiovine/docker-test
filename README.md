@@ -20,7 +20,7 @@ Per chi utilizza boot2docker:
 5. Entrare nel container:
 <pre>docker exec -it shortify.me bash</pre>
 
-6.Da shell lanciare il comando:
+6. Da shell lanciare il comando:
 <pre>./start-server</pre>
 
 Per eseguire soltanto i test JUnit è possibile invece lanciare lo script
