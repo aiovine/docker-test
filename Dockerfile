@@ -41,10 +41,3 @@ RUN echo '#!/bin/bash' >> /test-server
 RUN echo 'cd /shortify.me/ServerJava' >> /test-server
 RUN echo 'mvn test' >> /test-server
 RUN chmod 755 /test-server
-
-#compile the source and generate the jar file
-WORKDIR "/shortify.me/ServerJava"
-RUN mvn package
-
-#move back to the root directory
-WORKDIR "/"
