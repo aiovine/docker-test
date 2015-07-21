@@ -29,8 +29,10 @@ RUN git clone https://github.com/GruppoPBDMNG-7/shortify.me
 #move the client files to the root
 RUN mv /shortify.me/ClientAngular /
 
-#append the autostart script in the bashrc file
-RUN echo 'java -jar /shortify.me/ServerJava/target/shortify.me.jar' >> /etc/bash.bashrc
+#create the start server file and make it executable
+RUN echo '#!/bin/bash' >> /start-server
+RUN echo 'java -jar /shortify.me/ServerJava/target/shortify.me.jar' >> /start-server
+RUN chmod 755 /start-server
 
 #compile the source and generate the jar file
 WORKDIR "/shortify.me/ServerJava"
