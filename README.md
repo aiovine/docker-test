@@ -21,4 +21,4 @@ Entrare nel container:
 <pre>docker exec -it shortify.me bash</pre>
 
 Da shell lanciare il comando:
-<pre>java -jar target/shortify.me.jar</pre>
+<pre>./start-server</pre>
