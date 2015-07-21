@@ -32,8 +32,15 @@ RUN mv /shortify.me/ClientAngular /
 #create the start server file and make it executable
 RUN echo '#!/bin/bash' >> /start-server
 RUN echo 'cd /shortify.me/ServerJava' >> /start-server
+RUN echo 'mvn package' >> /start-server
 RUN echo 'java -jar target/shortify.me.jar' >> /start-server
 RUN chmod 755 /start-server
+
+#create a test script and make it executable
+RUN echo '#!/bin/bash' >> /test-server
+RUN echo 'cd /shortify.me/ServerJava' >> /test-server
+RUN echo 'mvn test' >> /test-server
+RUN chmod 755 /test-server
 
 #compile the source and generate the jar file
 WORKDIR "/shortify.me/ServerJava"
