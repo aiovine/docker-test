@@ -38,3 +38,5 @@ RUN chmod 755 /start-server
 WORKDIR "/shortify.me/ServerJava"
 RUN mvn package
 
+#move back to the root directory
+WORKDIR "/"
